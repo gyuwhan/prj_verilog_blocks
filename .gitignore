@@ -1,0 +1,12 @@
+# simulation outputs
+*.out
+*.vvp
+*.vcd
+*.fst
+# yosys / synth artifacts
+*.log
+*.json
+# python
+__pycache__/
+*.pyc
+venv*/

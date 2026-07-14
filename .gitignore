@@ -1,13 +1,51 @@
-# simulation outputs
-*.out
-*.vvp
+# ── 시뮬레이션 산출물 ──
 *.vcd
 *.fst
-sim/
-# yosys / synth artifacts
+*.fst.hier
+*.vvp
+sim_build/
+work/
+transcript
+*.wlf
+
+# ── Verilator ──
+obj_dir/
+
+# ── Yosys ──
+*.dot
+*.json.log
+
+# ── Vivado (프로젝트 모드 사용 시 특히 용량이 큼) ──
+*.jou
 *.log
-*.json
-# python
+*.str
+.Xil/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.gen/
+*.xpr
+vivado*.jou
+vivado*.log
+
+# ── OpenLane / OpenROAD (해당 repo에서만) ──
+runs/
+results/*/tmp/
+
+# ── cocotb (10주차~) ──
+sim_build/
+results.xml
+
+# ── Python ──
 __pycache__/
 *.pyc
-venv*/
+.pytest_cache/
+venv/
+*.egg-info/
+
+# ── 에디터/OS ──
+.vscode/
+*.swp
+.DS_Store
